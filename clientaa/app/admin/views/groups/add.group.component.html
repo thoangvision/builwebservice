@@ -1,0 +1,38 @@
+
+<div class="box box-default">
+    <div class="box-header with-border">
+        <h3 class="box-title"></h3>
+
+      <!-- /.box-header -->
+      <div class="box-body">
+          <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+
+                  <form class="form" (ngSubmit)="save(f.value)" id="appForm" #f="ngForm">
+                      <div class="form-group">
+                        <label for="email">Name En:</label>
+                        <input type="text" class="form-control" name="name_en" [ngModel]="group.name_en">
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Name Vn:</label>
+                        <input type="text" class="form-control" name="name_vn" [ngModel]="group.name_vn">
+                      </div>
+                      <div class="form-group">
+                        <label>Status :</label>
+                        <select class="form-control select2" name="status" [ngModel]="group.status" style="width: 100%;">
+                          <option selected="selected"></option>
+                          <option>Inactive</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                  </form> 
+
+              </div>
+            <!-- /.col -->
+              <div class="col-md-3"></div>
+          </div>
+        <!-- /.row -->
+      </div>
+</div>
+<!-- /.box -->
